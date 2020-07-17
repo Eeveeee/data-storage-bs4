@@ -1,0 +1,39 @@
+.burger {
+  &-button {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    background: #9c69e2;
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    left: 5%;
+    span,
+    span::before,
+    span::after {
+      position: absolute;
+      background: #212353;
+      margin-top: -1px;
+      margin-left: -13px;
+      left: 50%;
+      top: 50%;
+      height: 2px;
+      width: 26px;
+    }
+    span::before,
+    span::after {
+      content: "";
+    }
+    span::before {
+      transform: translateY(4px);
+    }
+    span::after {
+      transform: translateY(-4px);
+    }
+  }
+}
+@media (max-width: 480px) {
+  .burger-button {
+    display: block;
+  }
+}

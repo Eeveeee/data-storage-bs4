@@ -1,0 +1,20 @@
+.button {
+  font-weight: 300;
+  border-radius: 50px;
+  color: #fff;
+  padding: 17px 29px;
+  &-demo {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    color: #212353;
+    background: transparent;
+    span {
+      margin-right: 11px;
+    }
+  }
+  &-more {
+    background: #9c69e2;
+    color: #fff;
+  }
+}
