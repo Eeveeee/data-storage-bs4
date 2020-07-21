@@ -1,0 +1,115 @@
+.features {
+  padding: 30px 0;
+  &__header {
+    max-width: 584px;
+    text-align: center;
+    h2 {
+      margin-bottom: 50px;
+    }
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 160%;
+      color: $color-grey;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  &__card {
+    flex-basis: 45%;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 531px;
+    height: 400px;
+    img {
+      margin-right: 30px;
+    }
+    div {
+      h3 {
+        font-size: 24px;
+        color: $color-blue;
+        margin-bottom: 20px;
+      }
+      p {
+        min-height: 174px;
+        margin-bottom: 25px;
+        font-style: italic;
+        color: $color-grey;
+        line-height: 160%;
+      }
+      .button-more {
+        background: transparent url(../img/icons/arrow-right.svg) right no-repeat;
+        color: $color-blue;
+        padding: 10px 29px;
+      }
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .features {
+    &__card {
+      padding: 0;
+      border-radius: 50px;
+      background: none !important;
+      div {
+        text-align: center;
+        z-index: 2;
+        padding: 20px;
+        background: rgba($color: #f063b8, $alpha: 0.2);
+        border-radius: 50px;
+        p {
+          font-weight: 500;
+          min-height: 200px;
+        }
+      }
+      img {
+        z-index: 1;
+        position: absolute;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    &__cards {
+      margin-top: 25px;
+      padding: 0 25px;
+    }
+    &__card {
+      div {
+        padding: 60px 5px 5px 5px;
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .features {
+    &__cards {
+      flex-wrap: wrap;
+      margin-top: 25px;
+      padding: 0 10px;
+    }
+    &__card {
+      margin-bottom: 20px;
+      height: auto;
+      flex-basis: auto;
+      div {
+        padding: 40px 5px 5px 5px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

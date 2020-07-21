@@ -29,12 +29,7 @@
     background-size: cover;
   }
 }
-@media (max-width: 1024px) {
-  .main-wrap {
-    padding: 70px 0;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
   .main {
     position: relative;
     &::before {
@@ -50,6 +45,20 @@
       background-size: contain;
     }
     &-wrap {
+      padding: 70px 0;
+    }
+    &-background {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    position: relative;
+    padding: 0 0 100px 0;
+    margin-top: 120px;
+    &-wrap {
+      padding: 0;
       position: relative;
       z-index: 3;
     }
@@ -60,15 +69,11 @@
         max-width: 100%;
       }
     }
-    &-background {
-      display: none;
-    }
   }
 }
 @media (max-width: 480px) {
   .main {
-    margin-top: 10px;
-
+    margin-top: 80px;
     &::before {
       background-size: 120%;
       right: 0;

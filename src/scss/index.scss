@@ -24,6 +24,16 @@ h2 {
   max-width: 1248px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .row {
+    margin: 0;
+  }
+}
 @import "burger";
 @import "header";
 @import "main";
+@import "about";
+@import "features";
+@import "slider";
+@import "reviews";
+@import "footer";
