@@ -12,7 +12,6 @@ function scrollState(overflow = false) {
     document.body.style = "overflow:hidden;";
   }
 }
-console.log(burgerButton.classList);
 // burger-menu
 if (width <= 480) {
   burgerButton.addEventListener("click", () => {
