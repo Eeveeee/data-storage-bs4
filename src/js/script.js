@@ -12,22 +12,19 @@ function scrollState(overflow = false) {
     document.body.style = "overflow:hidden;";
   }
 }
-
+console.log(burgerButton.classList);
 // burger-menu
 if (width <= 480) {
   burgerButton.addEventListener("click", () => {
     event.preventDefault();
-    burgerButton.classList.forEach((el) => {
-      burgerButton.classList.toggle("burger-active");
-    });
-    navbar.classList.forEach((el) => {
-      navbar.classList.toggle("navbar-active");
-      if (el === "navbar-active") {
-        scrollState("scroll");
-      } else {
-        scrollState();
-      }
-    });
+    const arr = Array.from(burgerButton.classList);
+    if (arr.includes("burger-active")) {
+      scrollState("scroll");
+    } else {
+      scrollState();
+    }
+    burgerButton.classList.toggle("burger-active");
+    navbar.classList.toggle("navbar-active");
   });
 }
 
