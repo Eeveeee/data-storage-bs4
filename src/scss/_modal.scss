@@ -1,0 +1,47 @@
+.modal {
+  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgba($color: #000000, $alpha: 0.7);
+  position: fixed;
+  height: 0;
+  width: 0;
+  &-form {
+    position: relative;
+    padding: 20px 0 10px 0;
+    color: $color-white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba($color: #000000, $alpha: 0.5);
+    width: 300px;
+    height: 300px;
+    .modal-mail,
+    .modal-pas {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      input {
+        position: relative;
+        border-bottom: 2px solid grey;
+        background: none;
+        margin-bottom: 0;
+        margin-bottom: 30px;
+        color: white;
+      }
+    }
+  }
+  &-head {
+    h2 {
+      font-size: 30px;
+      margin: 0;
+    }
+  }
+}
+.modal-active {
+  height: 100vh;
+  width: 100vw;
+}

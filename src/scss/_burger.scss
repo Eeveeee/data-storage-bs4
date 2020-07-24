@@ -22,6 +22,7 @@
     }
     span::before,
     span::after {
+      transition: 0.4s;
       content: "";
     }
     span::before {
@@ -30,6 +31,17 @@
     span::after {
       transform: translateY(-4px);
     }
+  }
+}
+.burger-active {
+  span {
+    height: 0;
+  }
+  span::before {
+    transform: translateY(0) rotate(135deg);
+  }
+  span::after {
+    transform: translateY(0) rotate(-135deg);
   }
 }
 @media (max-width: 480px) {

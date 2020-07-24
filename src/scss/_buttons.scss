@@ -21,4 +21,43 @@
   &:hover {
     transform: scale(1.1);
   }
+  &-submit {
+    border-radius: 10px;
+    background: rgba($color: #000000, $alpha: 0.3);
+    padding: 10px 40px;
+    border: 1px solid rgba($color: $color-black, $alpha: 0.8);
+  }
+  &-modal {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgba($color: #000000, $alpha: 0.4);
+    border: 2px solid black;
+    top: 3%;
+    right: 3%;
+    span,
+    span::before,
+    span::after {
+      position: absolute;
+      background: $color-purple;
+      margin-top: -1px;
+      margin-left: -13px;
+      left: 50%;
+      top: 50%;
+      height: 0;
+      width: 26px;
+    }
+    span::before,
+    span::after {
+      height: 2px;
+      content: "";
+    }
+    span::before {
+      transform: rotate(-135deg);
+    }
+    span::after {
+      transform: rotate(135deg);
+    }
+  }
 }

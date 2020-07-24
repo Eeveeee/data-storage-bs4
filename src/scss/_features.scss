@@ -43,7 +43,8 @@
         line-height: 160%;
       }
       .button-more {
-        background: transparent url(../img/icons/arrow-right.svg) right no-repeat;
+        background: transparent url(../img/icons/arrow-right.svg) right
+          no-repeat;
         color: $color-blue;
         padding: 10px 29px;
       }
@@ -53,6 +54,8 @@
 @media (max-width: 1180px) {
   .features {
     &__card {
+      position: relative;
+      flex-direction: column;
       padding: 0;
       border-radius: 50px;
       background: none !important;
@@ -68,6 +71,7 @@
         }
       }
       img {
+        top: 20%;
         z-index: 1;
         position: absolute;
         opacity: 0.6;

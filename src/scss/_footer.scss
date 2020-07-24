@@ -26,6 +26,9 @@
 }
 @media (max-width: 768px) {
   .footer {
+    &__header {
+      text-align: center;
+    }
     &__buttons {
       flex-direction: column;
       button {
