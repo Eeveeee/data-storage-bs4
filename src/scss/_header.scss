@@ -20,14 +20,12 @@
         background: $color-grey;
         content: "";
         display: block;
-        bottom: 0;
-        position: absolute;
         opacity: 0;
         width: 0;
         height: 2px;
       }
       &:hover {
-        &:before {
+        &:after {
           opacity: 1;
           width: 100%;
           transition: 0.3s;
@@ -68,6 +66,11 @@
       font-size: 25px;
       margin-top: 10px;
       justify-content: space-between;
+      a {
+        &:after {
+          opacity: 0;
+        }
+      }
     }
   }
 }
