@@ -1,0 +1,28 @@
+body {
+  font-family: $font;
+  color: $color-blue;
+  font-size: 16px;
+  font-weight: 300;
+}
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 130%;
+}
+.container {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .row {
+    margin: 0;
+  }
+}

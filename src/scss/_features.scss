@@ -43,10 +43,20 @@
         line-height: 160%;
       }
       .button-more {
-        background: transparent url(../img/icons/arrow-right.svg) right
-          no-repeat;
+        background: transparent url(../img/icons/arrow-right.svg) right no-repeat;
         color: $color-blue;
         padding: 10px 29px;
+        span {
+          transition: 0.3s;
+          border-bottom: 2px solid transparent;
+        }
+        &:hover {
+          box-shadow: none !important;
+          span {
+            transition: 0.3s;
+            border-bottom: 2px solid $color-purple;
+          }
+        }
       }
     }
   }
