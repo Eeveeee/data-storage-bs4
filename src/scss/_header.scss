@@ -22,11 +22,13 @@
         display: block;
         bottom: 0;
         position: absolute;
+        opacity: 0;
         width: 0;
         height: 2px;
       }
       &:hover {
         &:before {
+          opacity: 1;
           width: 100%;
           transition: 0.3s;
         }
